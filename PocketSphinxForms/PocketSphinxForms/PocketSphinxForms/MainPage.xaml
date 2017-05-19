@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PocketSphinxForms"
+             x:Class="PocketSphinxForms.MainPage">
+
+    <StackLayout Orientation="Vertical" Margin="20">
+
+      <Label Text="Welcome to PocketSphinxForms!" VerticalOptions="Center" HorizontalOptions="Center" />
+        
+      <Label Text="{Binding Hypothesis}" FontAttributes="Bold"></Label>
+
+      <ActivityIndicator IsRunning="{Binding IsListening}"/>
+
+      <Switch IsToggled="{Binding IsInSpeech}"/>
+
+      <Button Text="Start" Command="{Binding StartListening}" IsEnabled="{Binding IsStartEnabled}"></Button>
+
+      <Button Text="Stop" Command="{Binding StopListening}" IsEnabled="{Binding IsStopEnabled}"></Button>
+
+      <StackLayout Orientation="Vertical" IsVisible="{Binding IsKeyphraseMode}">
+        <Label Text="Keyphrase Recognition:" FontAttributes="Bold"/>
+        <Entry Placeholder="Write a phrase in lower case here!" Text="{Binding NewKeyPhrase, Mode=TwoWay}"/>
+        <Button Text="Change the KeyPhrase!" Command="{Binding ChangeKeyPhrase}"></Button>
+        <Label Text="{Binding CurrKeyPhrase, StringFormat=Current keyphrase is : '{0}'}"/>
+      </StackLayout>
+
+      <StackLayout Orientation="Vertical" IsVisible="{Binding IsKeywordsMode}">
+        <Label Text="Keywords Recognition:" FontAttributes="Bold"/>
+        <Label Text="Count from 1 to 20"/>
+      </StackLayout>
+      
+      <Button Text="Toggle recognition mode" Command="{Binding ChangeModeRequestCommand}"/>
+      
+    </StackLayout>
+
+</ContentPage>

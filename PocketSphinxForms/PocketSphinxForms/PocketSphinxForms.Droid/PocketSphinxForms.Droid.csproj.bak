@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{859840DB-2649-440C-A581-3F7572E9A68C}</ProjectGuid>
+    <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PocketSphinxForms.Droid</RootNamespace>
+    <AssemblyName>PocketSphinxForms.Droid</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <AndroidApplication>true</AndroidApplication>
+    <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+    <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
+    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
+    <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
+    <AndroidStoreUncompressedFileExtensions />
+    <MandroidI18n />
+    <JavaMaximumHeapSize />
+    <JavaOptions />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>True</AndroidUseSharedRuntime>
+    <AndroidLinkMode>None</AndroidLinkMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <AndroidUseSharedRuntime>False</AndroidUseSharedRuntime>
+    <AndroidLinkMode>SdkOnly</AndroidLinkMode>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FormsViewGroup, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.3.3.180\lib\MonoAndroid10\FormsViewGroup.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Mono.Android" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ObjectModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Xamarin.Android.Support.Design, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Android.Support.Design.23.3.0\lib\MonoAndroid43\Xamarin.Android.Support.Design.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v4, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v4.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v4.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.AppCompat, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v7.AppCompat.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.AppCompat.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.CardView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v7.CardView.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.CardView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.MediaRouter, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v7.MediaRouter.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.RecyclerView, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Android.Support.v7.RecyclerView.23.3.0\lib\MonoAndroid403\Xamarin.Android.Support.v7.RecyclerView.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Core, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.3.3.180\lib\MonoAndroid10\Xamarin.Forms.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.3.3.180\lib\MonoAndroid10\Xamarin.Forms.Platform.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Platform.Android, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.3.3.180\lib\MonoAndroid10\Xamarin.Forms.Platform.Android.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Xamarin.Forms.Xaml, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\..\packages\Xamarin.Forms.2.3.3.180\lib\MonoAndroid10\Xamarin.Forms.Xaml.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="MainActivity.cs" />
+    <Compile Include="InterfaceService\SpeechService.cs" />
+    <Compile Include="Resources\Resource.Designer.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SpeechToText\Assets.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\Config.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\Decoder.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\Feature.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\FrontEnd.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\FsgModel.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\Hypothesis.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\Jsgf.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\JsgfIterator.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\JsgfRule.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\Lattice.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\LogMath.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\NBest.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\NBestIterator.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\NBestList.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\NGramModel.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\NGramModelSet.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\NGramModelSetIterator.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\PocketSphinx.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\PocketSphinxPINVOKE.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\Segment.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\SegmentIterator.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\SegmentList.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\SphinxBase.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\SphinxBasePINVOKE.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\SWIGTYPE_p_p_char.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\SWIGTYPE_p_p_p_mfcc_t.cs" />
+    <Compile Include="SpeechToText\CSharp_Wrapper\SWIGTYPE_p_void.cs" />
+    <Compile Include="SpeechToText\SpeechRecognizer.cs" />
+    <Compile Include="SpeechToText\SpeechRecognizerSetup.cs" />
+    <Compile Include="SpeechToText\SpeechResultEvent.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidNativeLibrary Include="lib\arm64-v8a\libpocketsphinxwrap.so" />
+    <AndroidNativeLibrary Include="lib\armeabi-v7a\libpocketsphinxwrap.so" />
+    <AndroidNativeLibrary Include="lib\x86\libpocketsphinxwrap.so" />
+    <AndroidNativeLibrary Include="lib\x86_64\libpocketsphinxwrap.so" />
+    <AndroidAsset Include="Assets\sync\choice_en.txt.md5" />
+    <AndroidAsset Include="Assets\sync\cmudict-en-us.dict" />
+    <AndroidAsset Include="Assets\sync\cmudict-en-us.dict.md5" />
+    <AndroidAsset Include="Assets\sync\end_en.txt.md5" />
+    <AndroidAsset Include="Assets\sync\start_en.txt.md5" />
+    <AndroidAsset Include="Assets\sync\up_en.txt.md5" />
+    <AndroidAsset Include="Assets\sync\en-us-ptm\feat.params" />
+    <AndroidAsset Include="Assets\sync\en-us-ptm\feat.params.md5" />
+    <AndroidAsset Include="Assets\sync\en-us-ptm\mdef" />
+    <AndroidAsset Include="Assets\sync\en-us-ptm\mdef.md5" />
+    <AndroidAsset Include="Assets\sync\en-us-ptm\means" />
+    <AndroidAsset Include="Assets\sync\en-us-ptm\means.md5" />
+    <AndroidAsset Include="Assets\sync\en-us-ptm\noisedict" />
+    <AndroidAsset Include="Assets\sync\en-us-ptm\noisedict.md5" />
+    <AndroidAsset Include="Assets\sync\en-us-ptm\README" />
+    <AndroidAsset Include="Assets\sync\en-us-ptm\README.md5" />
+    <AndroidAsset Include="Assets\sync\en-us-ptm\sendump" />
+    <AndroidAsset Include="Assets\sync\en-us-ptm\sendump.md5" />
+    <AndroidAsset Include="Assets\sync\en-us-ptm\transition_matrices" />
+    <AndroidAsset Include="Assets\sync\en-us-ptm\transition_matrices.md5" />
+    <AndroidAsset Include="Assets\sync\en-us-ptm\variances" />
+    <AndroidAsset Include="Assets\sync\en-us-ptm\variances.md5" />
+    <None Include="packages.config" />
+    <None Include="Resources\AboutResources.txt" />
+    <None Include="Assets\AboutAssets.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\icon.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\icon.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AndroidManifest.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\layout\Tabbar.axml" />
+    <AndroidResource Include="Resources\layout\Toolbar.axml" />
+    <AndroidResource Include="Resources\values\styles.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\PocketSphinxForms\PocketSphinxForms.csproj">
+      <Project>{3bdbe56e-bfcd-4bb7-b413-dc44b5b17803}</Project>
+      <Name>PocketSphinxForms</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sync\assets.lst" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sync\choice_en.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sync\end_en.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sync\start_en.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidAsset Include="Assets\sync\up_en.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
+  <Import Project="..\..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets" Condition="Exists('..\..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\..\packages\Xamarin.Forms.2.3.3.180\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+Xamarin.iOS10+xamarinmac20\Xamarin.Forms.targets'))" />
+  </Target>
+</Project>

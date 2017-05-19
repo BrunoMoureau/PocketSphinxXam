@@ -1,13 +1,3 @@
-# PocketSphinxXam
-Speech Recognition with PocketSphinx in Xamarin.Forms project (only available for Android)
-
-Here's an example of a Xamarin.Forms speech recognition project using PocketSphinx. I made it with the speech recognition engine PocketSphinx from CMUSphinx (website : https://cmusphinx.github.io/).
-
-I compiled the library and generated the wrapper C#-C following the explanations on their website. I added the libraries (.so) to the project and wrote some logic to use it (inspirated of the java classes distributed on the website).
-
-
-This speech recognition engine is under license : 
-
 Copyright (c) 1999-2016 Carnegie Mellon University.  All rights
 reserved.
 
