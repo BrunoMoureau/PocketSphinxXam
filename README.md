@@ -5,7 +5,8 @@ Here's an example of a Xamarin.Forms speech recognition project using PocketSphi
 
 I compiled the library and generated the wrapper C#-C following the explanations on their website. I added the libraries (.so) to the project and wrote some logic to use it (inspirated of the java classes distributed on the website).
 
-You can find how I built this in 'README compilation.txt'.
+If you want to know more about how I built this, please look at this file : https://github.com/BrunoMoureau/PocketSphinxXam/blob/master/README%20compilation.txt.
+
 
 This speech recognition engine is under license : 
 
