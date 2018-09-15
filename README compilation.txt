@@ -1,4 +1,4 @@
-I built this for Xamarin.Android on Windows 10 and I am not used to Mac or other operating systems.
+I built this for Xamarin.Android on Windows 10 and I am not used to other operating systems...
 
 The first thing you need to do is to download several files and tools to perform the compilation. 
 Here are the download links :
@@ -19,7 +19,8 @@ Gradle - https://gradle.org/install/
 Swig - http://www.swig.org/download.html
 Java SDK - http://www.oracle.com/technetwork/java/javase/downloads/index.html
 
-- Run Android Studio and download the last Android SDK, CMake and Android NDK using Tools > SDK Manager (you may also need Android SDK Built-Tools).
+- Run Android Studio and download the last Android SDK, CMake and Android NDK using Tools > SDK Manager 
+  (you may also need Android SDK Built-Tools).
 - Unzip Gradle and Swig archives (e.g. put these folders at C:\Tools) 
 - Install Java SDK and check that you have a folder "jre" inside your "jdk" folder.
 
@@ -45,11 +46,11 @@ Java SDK - http://www.oracle.com/technetwork/java/javase/downloads/index.html
 	swig -v
 	java -version
 
-- Add a new text file to pocketsphinx-android-master repository with path to your Android SDK and NDK as follow :
+- Add a new text file to pocketsphinx-android-master repository with paths to your Android SDK and NDK as follow :
 	sdk.dir=C\:\\androidstudio-sdk
 	ndk.dir=C\:\\androidstudio-sdk\\ndk-bundle
 
-- Update the pocketsphinx-android-master build.gradle file. Keep this one as reference (please look at comments) :
+- Update the pocketsphinx-android-master build.gradle file. Keep this one as reference (please look at the comments) :
 
 // Start of the build.gradle content
 
@@ -122,24 +123,22 @@ preBuild.dependsOn mkdir, swigSb, swigPs
 // End of the build.gradle content
 
 - Now, try to run 'gradle build' in a command prompt from your pocketsphinx-android repository 
-  (on Windows, type 'cmd' in the file path system to open the command prompt in the current location).
+  (on Windows, type 'cmd' in the file path system to open the command prompt at the current location).
 
-- If it ends up with error about no "windows-x86_64" folder found ( C:\...\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe), 
-  you will need to do some hacky changes to your Android NDK. Look at this link for more information : https://gitlab.kitware.com/cmake/cmake/issues/17253
-  If you are facing this problem, I recommand you to change the name of the folder at "C:\...\ndk-bundle\toolchains\llvm\prebuilt\windows" 
-  into "C:\...\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64" and so on if the error appears again (at another location but for the same reason). 
+- If it ends up with errors about no "windows-x86_64" folder found ( C:\...\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64\bin\clang.exe), you will need to do some hacky changes to your Android NDK. Look at this link for more information : https://gitlab.kitware.com/cmake/cmake/issues/17253
+If you are facing this issue, I recommand you to change the name of the folder at "C:\...\ndk-bundle\toolchains\llvm\prebuilt\windows" to "C:\...\ndk-bundle\toolchains\llvm\prebuilt\windows-x86_64" and so on if the issue appears again (at another location but for the same reason). 
 
 - If your build succeeded, you will find :
 	- The C# wrapper classes at C:\...\pocketsphinx-android-master\build\generated-src\csharp
-	- The Android native libraries at C:\...\pocketsphinx-android-master\build\intermediates\bundles\default\jni. You will need to rename
-          every '.so' library by the name you gave in the build.gradle file (because the C# wrapper classes will attempt to access your library 
-	  with the name 'android-pocketsphinx.so' in my case).
+	- The Android native libraries at C:\...\pocketsphinx-android-master\build\intermediates\bundles\default\jni. You will need to rename every '.so' library by the name you gave in the build.gradle file (because the C# wrapper classes will attempt to access your library with the name 'android-pocketsphinx.so' in my case).
 
 - In Visual Studio, add these files in your Xamarin.Android project as follow : 
 	- Paste the C# wrapper classes at any location and add missing SphinxBase namespace where it is required
-	- Paste the C:\...\pocketsphinx-android-master\build\intermediates\bundles\default\jni folder at the root of the project,
-          rename it 'lib' and set the BuildAction property of every library to AndroidNativeLibrary.
+	- Paste the "C:\...\pocketsphinx-android-master\build\intermediates\bundles\default\jni" folder at the root of the project,
+          rename it 'lib' (this is important) and set the BuildAction property of every library to AndroidNativeLibrary.
 	  (if you use Git, update your .gitignore file by running 'git add -f android-pocketsphinx.so' inside 'x86' folder location)
 
-- If you need word of sentence recognition in your app, you will have to compile some other files. Take a look at 'Assets/README.text' file in this repository.
+- If you need word of sentence recognition in your app, you will have to compile some other files. 
+  Take a look at : https://github.com/BrunoMoureau/PocketSphinxXam/tree/master/Assets
+  
 - If you need advanced information, please rely on the PocketSphinx documentation : https://cmusphinx.github.io/
