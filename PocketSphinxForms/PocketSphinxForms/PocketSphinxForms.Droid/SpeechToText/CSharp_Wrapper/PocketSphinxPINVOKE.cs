@@ -33,7 +33,7 @@ class PocketSphinxPINVOKE {
     static ExceptionArgumentDelegate argumentNullDelegate = new ExceptionArgumentDelegate(SetPendingArgumentNullException);
     static ExceptionArgumentDelegate argumentOutOfRangeDelegate = new ExceptionArgumentDelegate(SetPendingArgumentOutOfRangeException);
 
-    [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="SWIGRegisterExceptionCallbacks_PocketSphinx")]
+    [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="SWIGRegisterExceptionCallbacks_PocketSphinx")]
     public static extern void SWIGRegisterExceptionCallbacks_PocketSphinx(
                                 ExceptionDelegate applicationDelegate,
                                 ExceptionDelegate arithmeticDelegate,
@@ -47,7 +47,7 @@ class PocketSphinxPINVOKE {
                                 ExceptionDelegate overflowDelegate, 
                                 ExceptionDelegate systemExceptionDelegate);
 
-    [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="SWIGRegisterExceptionArgumentCallbacks_PocketSphinx")]
+    [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="SWIGRegisterExceptionArgumentCallbacks_PocketSphinx")]
     public static extern void SWIGRegisterExceptionCallbacksArgument_PocketSphinx(
                                 ExceptionArgumentDelegate argumentDelegate,
                                 ExceptionArgumentDelegate argumentNullDelegate,
@@ -169,7 +169,7 @@ class PocketSphinxPINVOKE {
     public delegate string SWIGStringDelegate(string message);
     static SWIGStringDelegate stringDelegate = new SWIGStringDelegate(CreateString);
 
-    [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="SWIGRegisterStringCallback_PocketSphinx")]
+    [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="SWIGRegisterStringCallback_PocketSphinx")]
     public static extern void SWIGRegisterStringCallback_PocketSphinx(SWIGStringDelegate stringDelegate);
 
     static string CreateString(string cString) {
@@ -188,274 +188,274 @@ class PocketSphinxPINVOKE {
   }
 
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Hypothesis_Hypstr_set")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Hypothesis_Hypstr_set")]
   public static extern void Hypothesis_Hypstr_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Hypothesis_Hypstr_get")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Hypothesis_Hypstr_get")]
   public static extern string Hypothesis_Hypstr_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Hypothesis_BestScore_set")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Hypothesis_BestScore_set")]
   public static extern void Hypothesis_BestScore_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Hypothesis_BestScore_get")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Hypothesis_BestScore_get")]
   public static extern int Hypothesis_BestScore_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Hypothesis_Prob_set")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Hypothesis_Prob_set")]
   public static extern void Hypothesis_Prob_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Hypothesis_Prob_get")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Hypothesis_Prob_get")]
   public static extern int Hypothesis_Prob_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_new_Hypothesis")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_new_Hypothesis")]
   public static extern global::System.IntPtr new_Hypothesis(string jarg1, int jarg2, int jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_delete_Hypothesis")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_delete_Hypothesis")]
   public static extern void delete_Hypothesis(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Segment_Word_set")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Segment_Word_set")]
   public static extern void Segment_Word_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Segment_Word_get")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Segment_Word_get")]
   public static extern string Segment_Word_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Segment_Ascore_set")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Segment_Ascore_set")]
   public static extern void Segment_Ascore_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Segment_Ascore_get")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Segment_Ascore_get")]
   public static extern int Segment_Ascore_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Segment_Lscore_set")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Segment_Lscore_set")]
   public static extern void Segment_Lscore_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Segment_Lscore_get")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Segment_Lscore_get")]
   public static extern int Segment_Lscore_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Segment_Lback_set")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Segment_Lback_set")]
   public static extern void Segment_Lback_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Segment_Lback_get")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Segment_Lback_get")]
   public static extern int Segment_Lback_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Segment_Prob_set")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Segment_Prob_set")]
   public static extern void Segment_Prob_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Segment_Prob_get")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Segment_Prob_get")]
   public static extern int Segment_Prob_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Segment_StartFrame_set")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Segment_StartFrame_set")]
   public static extern void Segment_StartFrame_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Segment_StartFrame_get")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Segment_StartFrame_get")]
   public static extern int Segment_StartFrame_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Segment_EndFrame_set")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Segment_EndFrame_set")]
   public static extern void Segment_EndFrame_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Segment_EndFrame_get")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Segment_EndFrame_get")]
   public static extern int Segment_EndFrame_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Segment_FromIter")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Segment_FromIter")]
   public static extern global::System.IntPtr Segment_FromIter(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_delete_Segment")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_delete_Segment")]
   public static extern void delete_Segment(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_new_Segment")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_new_Segment")]
   public static extern global::System.IntPtr new_Segment();
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_NBest_Hypstr_set")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_NBest_Hypstr_set")]
   public static extern void NBest_Hypstr_set(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_NBest_Hypstr_get")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_NBest_Hypstr_get")]
   public static extern string NBest_Hypstr_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_NBest_Score_set")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_NBest_Score_set")]
   public static extern void NBest_Score_set(global::System.Runtime.InteropServices.HandleRef jarg1, int jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_NBest_Score_get")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_NBest_Score_get")]
   public static extern int NBest_Score_get(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_NBest_FromIter")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_NBest_FromIter")]
   public static extern global::System.IntPtr NBest_FromIter(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_NBest_Hyp")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_NBest_Hyp")]
   public static extern global::System.IntPtr NBest_Hyp(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_delete_NBest")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_delete_NBest")]
   public static extern void delete_NBest(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_new_NBest")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_new_NBest")]
   public static extern global::System.IntPtr new_NBest();
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_new_SegmentIterator")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_new_SegmentIterator")]
   public static extern global::System.IntPtr new_SegmentIterator(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_delete_SegmentIterator")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_delete_SegmentIterator")]
   public static extern void delete_SegmentIterator(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_SegmentIterator_MoveNext")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_SegmentIterator_MoveNext")]
   public static extern bool SegmentIterator_MoveNext(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_SegmentIterator_Reset")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_SegmentIterator_Reset")]
   public static extern void SegmentIterator_Reset(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_SegmentIterator_GetCurrent")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_SegmentIterator_GetCurrent")]
   public static extern global::System.IntPtr SegmentIterator_GetCurrent(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_new_NBestIterator")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_new_NBestIterator")]
   public static extern global::System.IntPtr new_NBestIterator(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_delete_NBestIterator")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_delete_NBestIterator")]
   public static extern void delete_NBestIterator(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_NBestIterator_MoveNext")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_NBestIterator_MoveNext")]
   public static extern bool NBestIterator_MoveNext(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_NBestIterator_Reset")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_NBestIterator_Reset")]
   public static extern void NBestIterator_Reset(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_NBestIterator_GetCurrent")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_NBestIterator_GetCurrent")]
   public static extern global::System.IntPtr NBestIterator_GetCurrent(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_new_Decoder__SWIG_0")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_new_Decoder__SWIG_0")]
   public static extern global::System.IntPtr new_Decoder__SWIG_0();
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_new_Decoder__SWIG_1")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_new_Decoder__SWIG_1")]
   public static extern global::System.IntPtr new_Decoder__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_delete_Decoder")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_delete_Decoder")]
   public static extern void delete_Decoder(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_Reinit")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_Reinit")]
   public static extern void Decoder_Reinit(global::System.Runtime.InteropServices.HandleRef jarg1, global::System.Runtime.InteropServices.HandleRef jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_LoadDict")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_LoadDict")]
   public static extern void Decoder_LoadDict(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3, string jarg4);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_SaveDict")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_SaveDict")]
   public static extern void Decoder_SaveDict(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_AddWord")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_AddWord")]
   public static extern void Decoder_AddWord(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3, int jarg4);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_LookupWord")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_LookupWord")]
   public static extern string Decoder_LookupWord(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetLattice")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetLattice")]
   public static extern global::System.IntPtr Decoder_GetLattice(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetConfig")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetConfig")]
   public static extern global::System.IntPtr Decoder_GetConfig(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_DefaultConfig")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_DefaultConfig")]
   public static extern global::System.IntPtr Decoder_DefaultConfig();
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_FileConfig")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_FileConfig")]
   public static extern global::System.IntPtr Decoder_FileConfig(string jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_StartStream")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_StartStream")]
   public static extern void Decoder_StartStream(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_StartUtt")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_StartUtt")]
   public static extern void Decoder_StartUtt(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_EndUtt")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_EndUtt")]
   public static extern void Decoder_EndUtt(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_ProcessRaw")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_ProcessRaw")]
   public static extern int Decoder_ProcessRaw(global::System.Runtime.InteropServices.HandleRef jarg1, [global::System.Runtime.InteropServices.In, global::System.Runtime.InteropServices.MarshalAs(global::System.Runtime.InteropServices.UnmanagedType.LPArray)]byte[] jarg2, int jarg3, bool jarg4, bool jarg5);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_Hyp")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_Hyp")]
   public static extern global::System.IntPtr Decoder_Hyp(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetFe")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetFe")]
   public static extern global::System.IntPtr Decoder_GetFe(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetFeat")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetFeat")]
   public static extern global::System.IntPtr Decoder_GetFeat(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetInSpeech")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetInSpeech")]
   public static extern bool Decoder_GetInSpeech(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetFsg")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetFsg")]
   public static extern global::System.IntPtr Decoder_GetFsg(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetFsg")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetFsg")]
   public static extern void Decoder_SetFsg(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetJsgfFile")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetJsgfFile")]
   public static extern void Decoder_SetJsgfFile(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetJsgfString")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetJsgfString")]
   public static extern void Decoder_SetJsgfString(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetKws")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetKws")]
   public static extern string Decoder_GetKws(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetKws")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetKws")]
   public static extern void Decoder_SetKws(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetKeyphrase")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetKeyphrase")]
   public static extern void Decoder_SetKeyphrase(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetAllphoneFile")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetAllphoneFile")]
   public static extern void Decoder_SetAllphoneFile(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetLm")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetLm")]
   public static extern global::System.IntPtr Decoder_GetLm(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetLm")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetLm")]
   public static extern void Decoder_SetLm(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, global::System.Runtime.InteropServices.HandleRef jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetLmFile")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetLmFile")]
   public static extern void Decoder_SetLmFile(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2, string jarg3);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetLogmath")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetLogmath")]
   public static extern global::System.IntPtr Decoder_GetLogmath(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetSearch")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_SetSearch")]
   public static extern void Decoder_SetSearch(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_UnsetSearch")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_UnsetSearch")]
   public static extern void Decoder_UnsetSearch(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetSearch")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_GetSearch")]
   public static extern string Decoder_GetSearch(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_NFrames")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_NFrames")]
   public static extern int Decoder_NFrames(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_Seg")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_Seg")]
   public static extern global::System.IntPtr Decoder_Seg(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Decoder_Nbest")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Decoder_Nbest")]
   public static extern global::System.IntPtr Decoder_Nbest(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_new_Lattice__SWIG_0")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_new_Lattice__SWIG_0")]
   public static extern global::System.IntPtr new_Lattice__SWIG_0(string jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_new_Lattice__SWIG_1")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_new_Lattice__SWIG_1")]
   public static extern global::System.IntPtr new_Lattice__SWIG_1(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_delete_Lattice")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_delete_Lattice")]
   public static extern void delete_Lattice(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Lattice_Write")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Lattice_Write")]
   public static extern void Lattice_Write(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_Lattice_WriteHtk")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_Lattice_WriteHtk")]
   public static extern void Lattice_WriteHtk(global::System.Runtime.InteropServices.HandleRef jarg1, string jarg2);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_NBestList_GetEnumerator")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_NBestList_GetEnumerator")]
   public static extern global::System.IntPtr NBestList_GetEnumerator(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_delete_NBestList")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_delete_NBestList")]
   public static extern void delete_NBestList(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_SegmentList_GetEnumerator")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_SegmentList_GetEnumerator")]
   public static extern global::System.IntPtr SegmentList_GetEnumerator(global::System.Runtime.InteropServices.HandleRef jarg1);
 
-  [global::System.Runtime.InteropServices.DllImport("libpocketsphinxwrap.so", EntryPoint="CSharp_PocketSphinx_delete_SegmentList")]
+  [global::System.Runtime.InteropServices.DllImport("android-pocketsphinx.so", EntryPoint="CSharp_PocketSphinx_delete_SegmentList")]
   public static extern void delete_SegmentList(global::System.Runtime.InteropServices.HandleRef jarg1);
 }
 

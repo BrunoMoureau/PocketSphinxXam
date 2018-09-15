@@ -16,8 +16,7 @@
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>
     <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
     <AndroidManifest>Properties\AndroidManifest.xml</AndroidManifest>
-    <AndroidUseLatestPlatformSdk>true</AndroidUseLatestPlatformSdk>
-    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v8.1</TargetFrameworkVersion>
     <AndroidSupportedAbis>armeabi,armeabi-v7a,x86</AndroidSupportedAbis>
     <AndroidStoreUncompressedFileExtensions />
     <MandroidI18n />
@@ -138,10 +137,6 @@
     <Compile Include="SpeechToText\SpeechResultEvent.cs" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidNativeLibrary Include="lib\arm64-v8a\libpocketsphinxwrap.so" />
-    <AndroidNativeLibrary Include="lib\armeabi-v7a\libpocketsphinxwrap.so" />
-    <AndroidNativeLibrary Include="lib\x86\libpocketsphinxwrap.so" />
-    <AndroidNativeLibrary Include="lib\x86_64\libpocketsphinxwrap.so" />
     <AndroidAsset Include="Assets\sync\choice_en.txt.md5" />
     <AndroidAsset Include="Assets\sync\cmudict-en-us.dict" />
     <AndroidAsset Include="Assets\sync\cmudict-en-us.dict.md5" />
@@ -164,6 +159,10 @@
     <AndroidAsset Include="Assets\sync\en-us-ptm\transition_matrices.md5" />
     <AndroidAsset Include="Assets\sync\en-us-ptm\variances" />
     <AndroidAsset Include="Assets\sync\en-us-ptm\variances.md5" />
+    <AndroidNativeLibrary Include="lib\arm64-v8a\android-pocketsphinx.so" />
+    <AndroidNativeLibrary Include="lib\armeabi-v7a\android-pocketsphinx.so" />
+    <AndroidNativeLibrary Include="lib\x86\android-pocketsphinx.so" />
+    <AndroidNativeLibrary Include="lib\x86_64\android-pocketsphinx.so" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Assets\AboutAssets.txt" />

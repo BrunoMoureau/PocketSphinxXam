@@ -1,23 +1,12 @@
 using System;
-using System.Collections.Generic;
 using System.Linq;
 
 using Android.App;
-using Android.Content;
-using Android.OS;
-using Android.Runtime;
-using Android.Views;
-using Android.Widget;
 using Xamarin.Forms;
-using Xamarin.Forms.Platform.Android;
-using Android.Net;
-using Android.Media;
 using System.Threading.Tasks;
 using PocketSphinx;
 using SphinxBase;
 using Java.IO;
-
-using PocketSphinxForms;
 using PocketSphinxForms.Droid.InterfaceService;
 using PocketSphinxForms.Droid.SpeechToText;
 
