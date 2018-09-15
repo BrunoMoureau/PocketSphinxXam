@@ -7,6 +7,7 @@ I compiled the library and generated the wrapper C#-C following the explanations
 
 If you want to know more about how I built this, please look at this file : https://github.com/BrunoMoureau/PocketSphinxXam/blob/master/README%20compilation.txt.
 
+---------------------------------------------------------------------------------------
 
 This speech recognition engine is under license : 
 
