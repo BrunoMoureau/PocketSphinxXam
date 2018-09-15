@@ -48,7 +48,7 @@ namespace PocketSphinxForms.Droid.SpeechToText
             {
                 _recorder.Release();
                 throw new IOException(
-                        "Failed to initialize recorder. Microphone might be already in use.");
+                        "Failed to initialize recorder. Microphone might be already in use. Check if you gave the required permissions to this app.");
             }
         }
 

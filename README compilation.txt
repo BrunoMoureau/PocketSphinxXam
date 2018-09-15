@@ -141,5 +141,5 @@ preBuild.dependsOn mkdir, swigSb, swigPs
           rename it 'lib' and set the BuildAction property of every library to AndroidNativeLibrary.
 	  (if you use Git, update your .gitignore file by running 'git add -f android-pocketsphinx.so' inside 'x86' folder location)
 
-- If you need word of sentence recognition in your app, you will have to compile some other files. Take a look at 'compile' folder in this repository.
+- If you need word of sentence recognition in your app, you will have to compile some other files. Take a look at 'Assets/README.text' file in this repository.
 - If you need advanced information, please rely on the PocketSphinx documentation : https://cmusphinx.github.io/
