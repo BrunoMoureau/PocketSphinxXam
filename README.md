@@ -17,19 +17,19 @@ The first thing you need to do is to download several files and tools to perform
 
 #### IDE
 -----------------------------------------------------------------------------
-Android Studio - https://developer.android.com/studio/ 
+[Android Studio] (https://developer.android.com/studio/) 
 
 #### Projects
 -----------------------------------------------------------------------------
-SphinxBase - https://github.com/cmusphinx/sphinxbase
-PocketSphinx - https://github.com/cmusphinx/pocketsphinx 
-PocketSphinx-Android - https://github.com/cmusphinx/pocketsphinx-android 
+[SphinxBase] (https://github.com/cmusphinx/sphinxbase)
+[PocketSphinx] (https://github.com/cmusphinx/pocketsphinx)
+[PocketSphinx-Android] (https://github.com/cmusphinx/pocketsphinx-android)
 
 #### Tools
 -----------------------------------------------------------------------------
-Gradle - https://gradle.org/install/
-Swig - http://www.swig.org/download.html
-Java SDK - http://www.oracle.com/technetwork/java/javase/downloads/index.html
+[Gradle] (https://gradle.org/install/)
+[Swig] (http://www.swig.org/download.html)
+[Java SDK] (http://www.oracle.com/technetwork/java/javase/downloads/index.html)
 
 ### Installation
 - Run Android Studio and download the last Android SDK, CMake and Android NDK using Tools > SDK Manager 
