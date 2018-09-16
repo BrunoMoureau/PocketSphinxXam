@@ -66,6 +66,7 @@ Java SDK - http://www.oracle.com/technetwork/java/javase/downloads/index.html
 - Update the pocketsphinx-android-master build.gradle file. Keep this one as reference (please look at the comments) :
 
 '''
+
 buildscript {
     repositories {
         jcenter()
@@ -131,6 +132,7 @@ task swigPs(type: Exec) {					// PocketSphinx swig task to build the C# wrapper 
 }
 
 preBuild.dependsOn mkdir, swigSb, swigPs
+
 '''
 
 - Now, try to run 'gradle build' in a command prompt from your pocketsphinx-android repository 
