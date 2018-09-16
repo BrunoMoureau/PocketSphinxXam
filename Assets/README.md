@@ -1,3 +1,5 @@
+## Compile assets
+
 - Update your build.gradle file with your Android SDK version
 - Put the acoustic model and the associated dictionnary in -> \src\main\assets\sync\
 - Run 'gradle build' command
